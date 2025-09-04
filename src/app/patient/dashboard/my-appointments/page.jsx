@@ -20,6 +20,7 @@ export default function MyAppointments() {
   }, []);
 
 
+  // getPatientAppointments
   useEffect(() => {
     if (!token) return;
 
@@ -45,6 +46,11 @@ export default function MyAppointments() {
     fetchAppointments();
   }, [status, page, token]);
 
+  // getPatientAppointments end
+
+
+  
+// handleCancel Cancel System
   const handleCancel = async (id) => {
     if (confirm("Are you sure you want to cancel this appointment?")) {
       await cancelAppointment(id, token);
@@ -56,7 +62,7 @@ export default function MyAppointments() {
     <div className="p-8">
       <h1 className="text-2xl font-bold mb-6">My Appointments</h1>
 
-      {/* Filter */}
+      {/* Data Filter */}
       <select
         value={status}
         onChange={(e) => setStatus(e.target.value)}

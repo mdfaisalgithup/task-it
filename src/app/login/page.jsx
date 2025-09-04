@@ -158,9 +158,11 @@ try {
         </div>
       </div>
 
-<div>
+<div> 
+  
+{/* controlled by state */}
     <select 
-        value={role}              // controlled by state
+        value={role}             
         onChange={(e) => setRole(e.target.value)}   // update state when change
         className="border p-2 rounded"
       >

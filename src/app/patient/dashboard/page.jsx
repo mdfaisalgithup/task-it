@@ -28,7 +28,7 @@ const DashboardPatient = () => {
   console.log(token)
 
 
- 
+  // Doctor List
 useEffect(() => {
   if (!token) return;
 
@@ -70,9 +70,11 @@ setSpecializations(spci.data)
 
   fetchDoctors();
 }, [token, search, specialization, page]);
+// doctor list end
+
+
 
 // appoinment booking
-
   const handleBook = async (doctorId, date) => {
 
 
@@ -89,8 +91,10 @@ setSpecializations(spci.data)
 
 
   };
+
+  // appoinment booking end
       
-          console.log(selectedDoctor)
+
 
     return (
         <div className='mx-240px'>
@@ -137,7 +141,7 @@ setSpecializations(spci.data)
       </div>
 
 
-      {/* Doctors */}
+      {/* Doctors card */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {doctors?.map((doctor) => (
             
