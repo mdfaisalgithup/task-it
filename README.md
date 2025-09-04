@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 =======
 # Doctor-Patient Appointment App
 
@@ -19,15 +19,14 @@ A simple, lightweight web application for managing appointments between doctors 
 * Database: MongoDB
 * Authentication: JWT
 * Optional: Tailwind CSS for styling
->>>>>>> origin/main
 
 
 
-<<<<<<< HEAD
-=======
+
+<<<<<<<
 ```bash
 npm run dev
 ```
 ## Live: https://task-it-orpin.vercel.app/
 
->>>>>>> origin/main
+
