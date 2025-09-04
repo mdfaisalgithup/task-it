@@ -75,7 +75,7 @@ export default function MyAppointments() {
       <div className="space-y-4">
         {appointments.map((app) => (
           <div
-            key={app?.id} //
+            key={app?.id} 
             className="border p-4 rounded flex justify-between items-center"
           >
             <div>
