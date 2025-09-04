@@ -25,7 +25,7 @@ A simple, lightweight web application for managing appointments between doctors 
 
 <<<<<<<
 ```bash
-mpm i
+npm i
 after 
 npm run dev
 ```
