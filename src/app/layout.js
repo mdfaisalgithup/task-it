@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Best Doctor",
+  title: "Best Doctor - Our Best Service",
   description: "Online Doctor Service",
 };
 

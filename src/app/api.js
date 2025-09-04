@@ -50,6 +50,7 @@ export const createAppointment = async (data, token) => {
 };
 
 
+// getPatientAppointments
 export const getPatientAppointments = async (status, page, token) => {
   const res = await api.get("/appointments/patient", {
     params: { status, page },
@@ -58,6 +59,7 @@ export const getPatientAppointments = async (status, page, token) => {
   return res.data;
 };
 
+// cancelAppointment
 export const cancelAppointment = async (appointment_id, token) => {
   const res = await api.patch(
     "/appointments/update-status",
@@ -69,7 +71,7 @@ export const cancelAppointment = async (appointment_id, token) => {
 
 
 
-
+// getAppointments
 export const getAppointments = async (status, date, page, token) => {
   const params = { status, page };
   if (date) params.date = date;

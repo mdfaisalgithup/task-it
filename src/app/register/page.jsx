@@ -19,7 +19,7 @@ const Registration = () => {
       const[specializations, setSpecializations] = useState("")
       const[valueSelect, setValueSelect] = useState("")
       const [success, setSuccess] = useState('');
-        // const [okB, setOkB] = useState(false);
+        
  const [succesO, setSuccesO] = useState(false);
 
        useEffect(() => {
@@ -141,9 +141,6 @@ catch (error) {
   }
 
 
-           
-        
-
     }
 
 
@@ -169,13 +166,10 @@ catch (error) {
          
 
 <div className="space-y-6">
-
-
           
 {
   success == success.length > 0 && <div>{success}</div>
 }
-
 
        <div>
         <label htmlFor="email" className="block text-sm/6 font-medium text-black">Name:</label>
